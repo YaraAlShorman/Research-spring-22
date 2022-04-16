@@ -1,0 +1,12 @@
+x
+y
+z
+vx
+vy
+vz
+redshift
+r (sqrt(x^2+y^2+z^2)) (actual distance)
+
+dv (error in v)
+glon
+glat

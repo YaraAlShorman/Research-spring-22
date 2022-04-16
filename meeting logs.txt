@@ -1,6 +1,7 @@
 ====================
 INFO
 ====================
+--------------------
 parameters in outerrim catalogue
 0redshift
 1distance
@@ -9,9 +10,38 @@ parameters in outerrim catalogue
 4longitude
 5latitude
 
+--------------------
+Making mock catalogs for Machine learning (this is available on the shared drive folder)
+
+April 4, 2022
+
+The columns in the outer rim catalogs are x,y,z,vx,vy,vz, r, v, dv, glon, and
+glat. Here r = sqrt(x^2+y^2+z^2) and v = sqrt(vx^2+vy^2+vz^2).
+
+The catalogs don’t have any error so the error in the velocity dv = 0 for all 
+of the objects. Once you’ve rotated the catalog, we need to generate the quantities 
+that would be in a real catalog. This includes adding realistic measurement noise.  
+Typical uncertainties in the distance modulus are around σμ = 0.4, so that
+would probably be a good place to start. I’m imagining that we will start by
+seeing if we can train a model with artificial data and have it predict the bulk
+flow for a test set of artificial catalogs.
+The quantities you should generate to make a realistic catalog are redshift
+cz = Hor + v (1)
+where you should use Ho = 100km/s/Mpc (since distances are in h^−1 Mpc ), and distance modulus
+
+μ = 5 log10(r) + 25 + δ (2)
+
+where δ is drawn from a Gaussian distribution centered on zero and with standard 
+deviation σμ. All together, the catalogs should include cz, μ, σμ, glon, and glat. 
+However, to start with we can use the same σμ for all the objects so we
+won’t need to include it in the catalog data.
+--------------------
+
+
 ====================
 TODO
 ====================
+-------------------
 determine distance modulus
 add some noise (random variable from galcian)
 error of 0.4
@@ -20,10 +50,14 @@ how to get distance modulus
 (is it in data, do we calculate it?)
 
 how to format the arrays (dont they have to be all the same for the ML)
+-------------------
 
 ====================
-April 16 '22
+MEETINGS
 ====================
+--------------------
+April 16 '22
+--------------------
 for each catalogue: (formatting)
 redshift
 distance modulus
@@ -32,3 +66,5 @@ glat
 x
 y
 z
+
+
