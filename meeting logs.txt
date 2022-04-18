@@ -2,13 +2,19 @@
 INFO
 ====================
 --------------------
-parameters in outerrim catalogue
-0redshift
-1distance
-2velocity
-3error in v
-4longitude
-5latitude
+parameters in outerrim catalogue (in order)
+0 - x
+1 - y
+2 - z
+3 - vx
+4 - vy
+5 - vz
+6 - cz
+7 - r (actual distance)
+8 - vr (radial velocity)
+9 - sigma vr (error in vr)
+10 - glon (galactic longitude)
+11 - glat (galactic latitude)
 
 --------------------
 Making mock catalogs for Machine learning (this is available on the shared drive folder)
@@ -26,10 +32,10 @@ would probably be a good place to start. I’m imagining that we will start by
 seeing if we can train a model with artificial data and have it predict the bulk
 flow for a test set of artificial catalogs.
 The quantities you should generate to make a realistic catalog are redshift
-cz = Hor + v (1)
+cz = Hor + v
 where you should use Ho = 100km/s/Mpc (since distances are in h^−1 Mpc ), and distance modulus
 
-μ = 5 log10(r) + 25 + δ (2)
+μ = 5 log10(r) + 25 + δ
 
 where δ is drawn from a Gaussian distribution centered on zero and with standard 
 deviation σμ. All together, the catalogs should include cz, μ, σμ, glon, and glat. 
@@ -58,7 +64,7 @@ MEETINGS
 --------------------
 April 16 '22
 --------------------
-for each catalogue: (formatting)
+for each catalogue: (new formatting)
 redshift
 distance modulus
 glon

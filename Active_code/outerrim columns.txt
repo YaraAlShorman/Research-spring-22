@@ -1,12 +1,21 @@
-x
-y
-z
-vx
-vy
-vz
-redshift
-r (sqrt(x^2+y^2+z^2)) (actual distance)
-
-dv (error in v)
-glon
-glat
+Here are the verified columns for the outerrim LG catalogs:
+=================
+0 - x
+1 - y
+2 - z
+3 - vx
+4 - vy
+5 - vz
+6 - cz
+7 - r (actual distance)
+8 - vr (radial velocity)
+9 - sigma vr (error in vr)
+10 - glon (galactic longitude)
+11 - glat (galactic latitude)
+=================
+r = (sqrt(x^2+y^2+z^2))
+vr = cz - 100 * r
+cz = (100)*r + vr 
+=================
+where x,y,z are coordinates
+vx,vy,vz are true velocity components
