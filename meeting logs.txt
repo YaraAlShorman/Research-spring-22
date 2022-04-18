@@ -59,18 +59,18 @@ how to format the arrays (dont they have to be all the same for the ML)
 -------------------
 
 ====================
-MEETINGS
+MEETING NOTES
 ====================
 --------------------
-April 16 '22
+April 15 '22
 --------------------
 for each catalogue: (new formatting)
 redshift
 distance modulus
 glon
 glat
-x
-y
-z
+bx (bulkflow x component)
+by (bulkflow y component)
+bz (bulkflow z component)
 
 
