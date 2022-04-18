@@ -48,14 +48,9 @@ won’t need to include it in the catalog data.
 TODO
 ====================
 -------------------
-determine distance modulus
-add some noise (random variable from galcian)
-error of 0.4
-
-how to get distance modulus
-(is it in data, do we calculate it?)
-
-how to format the arrays (dont they have to be all the same for the ML)
+sample the arrays
+format the arrays
+think about how to include the bulkflows (I am free to do whatever)
 -------------------
 
 ====================
