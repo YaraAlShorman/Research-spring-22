@@ -58,3 +58,10 @@ so it takes less space, but it still works just fine.
 My computer also processes it much quicker
 
 I mainly did this to keep the bulkflows and the corresponding data in the same file.
+
+you can access the code I used at https://github.com/YaraAlShorman/Research-spring-22
+I am using github because it is a cloud-based code management system that helps me 
+keep track of different versions of the code and always keep ot up to date.
+You can always access the latest version of the code from there.
+Uploading it to the drive will make version tracking and staying up to date difficult
+because I would have to manually update it every time I make changes.
