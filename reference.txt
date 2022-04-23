@@ -49,8 +49,12 @@ formatting of data:
 2-glon
 3-glat
 
+then you can access each column by using: data[: ,i]
+
 bx, by and bz will be stored in a header array for every file
 
 files will be saved as .npy.npz, which is an archive file format (that can be compressed)
 so it takes less space, but it still works just fine.
 My computer also processes it much quicker
+
+I mainly did this to keep the bulkflows and the corresponding data in the same file.
