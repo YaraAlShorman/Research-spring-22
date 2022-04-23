@@ -68,4 +68,15 @@ for each catalogue: (new formatting)
 5-by (bulkflow y component)
 6-bz (bulkflow z component)
 
+--------------------
+April 23 '22
+--------------------
+I realized in a moment of clarity that the above isnt right
+New format:
+0-redshift
+1-distance modulus
+2-glon
+3-glat
+
+bx, by and bz will be stored in the header of each array
 
