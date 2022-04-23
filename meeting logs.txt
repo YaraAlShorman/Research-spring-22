@@ -17,66 +17,30 @@ parameters in outerrim catalogue (in order)
 11 - glat (galactic latitude)
 
 --------------------
-Making mock catalogs for Machine learning (this is available on the shared drive folder)
-
-April 4, 2022
-
-The columns in the outer rim catalogs are x,y,z,vx,vy,vz, r, v, dv, glon, and
-glat. Here r = sqrt(x^2+y^2+z^2) and v = sqrt(vx^2+vy^2+vz^2).
-
-The catalogs don’t have any error so the error in the velocity dv = 0 for all 
-of the objects. Once you’ve rotated the catalog, we need to generate the quantities 
-that would be in a real catalog. This includes adding realistic measurement noise.  
-Typical uncertainties in the distance modulus are around σμ = 0.4, so that
-would probably be a good place to start. I’m imagining that we will start by
-seeing if we can train a model with artificial data and have it predict the bulk
-flow for a test set of artificial catalogs.
-The quantities you should generate to make a realistic catalog are redshift
-cz = Hor + v
-where you should use Ho = 100km/s/Mpc (since distances are in h^−1 Mpc ), and distance modulus
-
-μ = 5 log10(r) + 25 + δ
-
-where δ is drawn from a Gaussian distribution centered on zero and with standard 
-deviation σμ. All together, the catalogs should include cz, μ, σμ, glon, and glat. 
-However, to start with we can use the same σμ for all the objects so we
-won’t need to include it in the catalog data.
---------------------
-
-
-====================
-TODO
-====================
--------------------
-sample the arrays
-format the arrays
-think about how to include the bulkflows (I am free to do whatever)
--------------------
-
-====================
-MEETING NOTES
-====================
---------------------
-April 15 '22
---------------------
-for each catalogue: (new formatting)
-0-redshift
-1-distance modulus
-2-glon
-3-glat
-4-bx (bulkflow x component)
-5-by (bulkflow y component)
-6-bz (bulkflow z component)
-
---------------------
 April 23 '22
 --------------------
-I realized in a moment of clarity that the above isnt right
-New format:
+.npz files can contain multiple arrays, which can be indexed similar to how python
+dictionaries works
+
+consider the following:
+
+    arrays = np.load('filename')
+
+    # to access the bulkflows, use:
+    bulkflows = arrays['header']  # this will return a 0x3 array with bx, by, bz
+
+    # to access the data, use:
+    data = arrays['data']  
+    # this will return your usual 4-coloumned array of data, which is formatted as follows:
+
+formatting of data:
 0-redshift
 1-distance modulus
 2-glon
 3-glat
 
-bx, by and bz will be stored in the header of each array
+bx, by and bz will be stored in a header array for every file
 
+files will be saved as .npy.npz, which is an archive file format (tha can be compressed)
+so it takes less space, but it still works just fine.
+My computer also processes it much quicker
