@@ -60,12 +60,12 @@ MEETING NOTES
 April 15 '22
 --------------------
 for each catalogue: (new formatting)
-redshift
-distance modulus
-glon
-glat
-bx (bulkflow x component)
-by (bulkflow y component)
-bz (bulkflow z component)
+0-redshift
+1-distance modulus
+2-glon
+3-glat
+4-bx (bulkflow x component)
+5-by (bulkflow y component)
+6-bz (bulkflow z component)
 
 
