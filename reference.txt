@@ -65,3 +65,6 @@ keep track of different versions of the code and always keep ot up to date.
 You can always access the latest version of the code from there.
 Uploading it to the drive will make version tracking and staying up to date difficult
 because I would have to manually update it every time I make changes.
+
+NOTE: I also accounted for zone of avoidance within 5 degrees above and below the center.
+However, I did not make sure all arrays were the same length.
