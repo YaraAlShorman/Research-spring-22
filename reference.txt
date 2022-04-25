@@ -2,7 +2,7 @@
 INFO
 ====================
 --------------------
-Here are the correct columns for the outerrim LG catalogs:
+Here are the correct columns for the original outerrim LG catalogs:
 =================
 0 - x (coords)
 1 - y (coords)
