@@ -1,0 +1,12 @@
+Yara Al-Shorman
+Jun 6 2022
+
+The code is successfully running on my NVIDIA GPU.
+However, I cannot get the accuracy to go above 40%
+Possible solutions to try???
+* change LSTM layer, I suspect it may be the problem
+* if not, try changing the normalization scale
+* what happens if I try processing them as images..?
+
+changing optimizers is not working
+changing activation functions hasnt been working either
