@@ -13,3 +13,7 @@ changing activation functions hasnt been working either
 
 make bulkflow vs bulkflow plot
 only rotated cat of the same origin -- DONE
+
+======
+I want to try making all tensors the same size
+and see how that affects processing time
