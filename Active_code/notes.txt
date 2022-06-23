@@ -17,3 +17,9 @@ only rotated cat of the same origin -- DONE
 ======
 I want to try making all tensors the same size
 and see how that affects processing time
+
+RESULT: so far, I havent seen any improvements in performance when cutting off data.
+it performs just as bad
+======
+i want to try making a really big model (with like 8 layers) and see what happens
+I also want to test not normalizing the data. Since it's worked so well for prof. Ric's student. (which i still dont have an explanation for why...)
