@@ -23,3 +23,4 @@ it performs just as bad
 ======
 i want to try making a really big model (with like 8 layers) and see what happens
 I also want to test not normalizing the data. Since it's worked so well for prof. Ric's student. (which i still dont have an explanation for why...)
+
