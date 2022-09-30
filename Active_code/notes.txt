@@ -24,3 +24,17 @@ it performs just as bad
 i want to try making a really big model (with like 8 layers) and see what happens
 I also want to test not normalizing the data. Since it's worked so well for prof. Ric's student. (which i still dont have an explanation for why...)
 
+======
+September 8 2022
+
+Back to work after a semi-break.
+Made my first push to GitHub in months.
+
+Some changes include adding Hume and Rachel's code. Might add Mohsen's code at some point as well but not now.
+
+I also modified my rotation code to no longer do rotations, but i still run the data through it to keep it compatible with my model.
+I also still want the data to be processed. This includes:
+* adding error of 40% to the data to make it more realistic
+* using distance mod instance of just distance for training the model
+* filtering out the zone of avoidance
+* organizing the data to make it easier and faster to process in the model (and to also deal with smaller files)
