@@ -38,3 +38,9 @@ I also still want the data to be processed. This includes:
 * using distance mod instance of just distance for training the model
 * filtering out the zone of avoidance
 * organizing the data to make it easier and faster to process in the model (and to also deal with smaller files)
+
+======
+October 1 2022
+
+Added bulkflow calculator function to galaxy_rotations.ipynb
+compiled a folder of over 2000 clusters. will try to run the model on this data and see how it does.
