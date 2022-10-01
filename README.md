@@ -15,11 +15,12 @@
 * 10: glon (galactic longitude)
 * 11: glat (galactic latitude)
 
-r = (sqrt(x^2+y^2+z^2))
-vr = cz - 100 * r
-cz = (100)*r + vr 
 
-Mpc: Mega parsecs (10^6 parsecs)
-h is the uncertainity in the hubble constant
-where x,y,z are coordinates
-vx,vy,vz are true velocity components
+* r = (sqrt(x^2+y^2+z^2))
+* vr = cz - 100 * r
+* cz = (100)*r + vr 
+
+* Mpc: Mega parsecs (10^6 parsecs)
+* h is the uncertainity in the hubble constant
+* where x,y,z are coordinates
+* vx,vy,vz are true velocity components
