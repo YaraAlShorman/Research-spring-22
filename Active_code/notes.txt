@@ -44,3 +44,7 @@ October 1 2022
 
 Added bulkflow calculator function to galaxy_rotations.ipynb
 compiled a folder of over 2000 clusters. will try to run the model on this data and see how it does.
+
+======
+calculate variance for data
+write script to generate catalogues from yuyu's script
