@@ -19,7 +19,7 @@ import scipy.stats as stats
 from scipy.optimize import curve_fit
 from mpi4py import MPI
 import sys
-import r_select_function as r_fun        #Functions in r_select_function.py
+# import r_select_function as r_fun        #Functions in r_select_function.py
 import cz_select_function as cz_fun      #Functions in cz_select_function.py
 
 #--------Parallel Computing using mpi4py seeting
@@ -46,8 +46,8 @@ if type_num == 1:
     center_name = "OuterRim_center_LG300_new.npy"
 
 #--------Saveing folder and data reading folder
-folder="/panfs/pfs.local/work/crmda/y407w211/OuterRim/SimulOuterRim_allinone_code/"
-folderdata = "/panfs/pfs.local/work/crmda/y407w211/OuterRim/"
+folder="C:/Users/yaras/OneDrive/Desktop/Research/Feldman/generated_data"
+folderdata = "C:/Users/yaras/OneDrive/Desktop/Research/Feldman/outerrim/SimulationBoxes"
 
 #--------CF3 data form, CF3-gal-H750 or CF3-group-H750
 Filetype='CF3-gal-H750'
